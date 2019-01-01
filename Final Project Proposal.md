@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Nov 28 09:30:18 2018
-
-@author: Sui.Wayne
-"""
 期末專案構想：文字資料分析處理器
 ==================
 
