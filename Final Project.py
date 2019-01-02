@@ -21,7 +21,7 @@ def main():
         new_data = in_data.replace(keyword , "《" + keyword + "》")
 
         return keyword , num , new_data
-#Depracated
+#Deprecated
 #    a = len(keyword)
 #    while True:
 #        if keyword in data:
@@ -62,18 +62,17 @@ def main():
         print("結果為：" + str(c))
         print("")
         print("關鍵字《" + str(a) +"》共出現了" + str(b) +"次")
-    elif choice ==3:
+    elif choice == 3:
         print("")
         sentence_pat , sentence = func3(a, c)
-        print(sentence)
-    elif choice ==4:
+    elif choice == 4:
         print("")
         func4()
     else:
         print("")
         choice = input("無效輸入，請重新選擇要執行的功能（1～4）：")
     print("")
-    conti = input("請問是否要繼續操作本程式？（是＝Y，否＝N）：")
+    conti = input("請問是否要繼續操作本程式？（是＝Y，否＝N）：").upper()
     if conti == "Y":
         print("")
         main()
@@ -83,5 +82,17 @@ def main():
         print("")
         system("pause")
     else:
-        input("輸入無效，請重新輸入：")
+        while True:
+            conti = input("輸入無效，請重新輸入：").upper()
+            if conti == "Y":
+                print("")
+                main()
+                break
+            elif conti == "N":
+                print("")
+                print("感謝您的使用！")
+                print("")
+                system("pause")
+                break
+            
 main()
